@@ -88,24 +88,27 @@ public static void main(String[] args) {
             /*
              * Example 3: Sum of Numbers
              * Calculates the sum of numbers from 1 to n.
-
-             * Example: sum(5)
-             * 5 + 4 + 3 + 2 + 1 = 15
-             * Base Case:
-             * n == 0
-             * Recursive Case:
-             * n + sum(n - 1)
-             *
+             *  Base Case: n == 0
+             * Recursive Case: n + sum(n - 1)
              * Time complexity: O(n)
              * Space Complexity: O(n)
+             * Example: sum(5)
+             * sum(5)
+             * = 5 + sum(4)
+             * = 5 + 4 + sum(3)
+             * = 5 + 4 + 3 + sum(2)
+             * = 5 + 4 + 3 + 2 + sum(1)
+             * = 5 + 4 + 3 + 2 + 1 + sum(0)
+             * Final result:
+             * 5 + 4 + 3 + 2 + 1 = 15
+            
              */
             static int sum(int n) {
 
                 if (n == 0) {
                     return 0;
                 }
-
-                return n + sum(n - 1);
+              return n + sum(n - 1);
             }
         }
 
