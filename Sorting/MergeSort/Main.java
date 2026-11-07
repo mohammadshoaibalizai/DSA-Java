@@ -65,6 +65,4 @@ System.out.println(Arrays.toString(ans));
         return mix;
         
         }
-        
-        
         }

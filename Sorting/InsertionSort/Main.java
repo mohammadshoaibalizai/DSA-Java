@@ -15,12 +15,11 @@ public class Main {
   // Best Case: O(n)
   // Average Case: O(n²)
  // Worst Case: O(n²)
- //
  // Space Complexity: O(1)
  // In-place sorting algorithm.
 static void insertionsort(int [] arr){
     for(int i=0;i<arr.length-1;i++){
-        for(int j=i+1;j>0;j--){
+        for(int j=i+1;j>0;j--){  
             if(arr[j]<arr[j-1]){
                 swap(arr,j,j-1);
             }else {

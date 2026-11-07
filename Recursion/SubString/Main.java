@@ -1,5 +1,3 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
 /*
  * Problem: Generate all subsets of a string using recursion.
@@ -14,7 +12,6 @@ public class Main {
  * p  = Selected characters so far.
  * up = Characters remaining to process.
  */
-
             public static void main(String[] args) {
 
                 String input = "abc";
@@ -37,15 +34,12 @@ public class Main {
                     System.out.println(p);
                     return;
                 }
-
                 // Get the first character of the remaining string.
                 char ch = up.charAt(0);
                 // Remove the first character.
                 String remaining = up.substring(1);
-
                 // CHOICE 1: Exclude the current character.
                 subset(p, remaining);
-
                 // CHOICE 2: Include the current character.
                 subset(p + ch, remaining);
             }
